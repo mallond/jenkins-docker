@@ -30,7 +30,7 @@ jobs:
       - 
         name: Echo Docker Version
         run: |
-          echo docker version
+          docker version
 
     
       
