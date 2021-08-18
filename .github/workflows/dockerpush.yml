@@ -34,11 +34,11 @@ jobs:
       uses: docker/login-action@v1.10.0
       with:
     # Server address of Docker registry. If not set then will default to Docker Hub
-        registry: mallond
+        registry: ${{ secrets.DOCKERHUB_USER }}
     # Username used to log against the Docker registry
-        username: mallond
+        username: ${{ secrets.DOCKERHUB_USER }}
     # Password or personal access token used to log against the Docker registry
-        password: 'tada'
+        password: ${{ secrets.DOCKERHUB }}
     # Log out from the Docker registry at the end of a job
         logout: true
     
