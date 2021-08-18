@@ -27,6 +27,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB }}
+      - 
+        name: Echo Docker Version
+        run: |
+          echo docker version
 
     
       
