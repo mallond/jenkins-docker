@@ -32,10 +32,12 @@ jobs:
         with:
           fetch-depth: 0
       - 
-        name: Echo Docker Version
+        name: Build Docker File
         run: |
           docker version
           ls -al
+          docker build . -t mallond/jenkins-main:v0.0.1
+          docker push mallond/jenkins-main:v0.0.1
 
 
 
