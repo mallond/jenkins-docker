@@ -27,11 +27,17 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB }}
+      -
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - 
         name: Echo Docker Version
         run: |
           docker version
           ls -al
+
+
 
     
       
