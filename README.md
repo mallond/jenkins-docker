@@ -10,3 +10,6 @@ kubectl create -f https://raw.githubusercontent.com/mallond/jenkins-docker/main/
 ```
 kubectl create -f https://raw.githubusercontent.com/mallond/jenkins-docker/main/service.yaml -n jenkins
 ```
+```
+kubectl patch svc jenkins -n jenkins -p '{"spec": {"type": "LoadBalancer", "externalIPs":["172.21.23.191"]}}'
+```
