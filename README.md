@@ -24,3 +24,8 @@ kubectl proxy --port=8081 &
 curl localhost:8081/api
 out: This will give you the serverAddress
 ```
+
+```
+kubectl get secrets
+kubectl describe secrets/default-token-pkblx
+```
