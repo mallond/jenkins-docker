@@ -7,3 +7,6 @@ kubectl create namespace jenkins
 ```
 kubectl create -f https://raw.githubusercontent.com/mallond/jenkins-docker/main/deployment.yaml -n jenkins
 ```
+```
+kubectl create -f https://raw.githubusercontent.com/mallond/jenkins-docker/main/service.yaml -n jenkins
+```
