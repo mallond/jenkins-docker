@@ -12,6 +12,7 @@ kubectl create -f https://raw.githubusercontent.com/mallond/jenkins-docker/main/
 ```
 ```
 kubectl patch svc jenkins -n jenkins -p '{"spec": {"type": "LoadBalancer", "externalIPs":["172.21.23.191"]}}'
+kubectl patch svc jenkins -n jenkins -p '{\"spec\": {\"type\": \"LoadBalancer\", \"externalIPs\":[\"172.21.16.1\"]}}'
 ```
 ```
 kubectl get pods -n jenkins
