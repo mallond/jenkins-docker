@@ -38,7 +38,7 @@ jobs:
           ls -al
           chmod 777 setup.sh
           docker build . -t mallond/jenkins-main:v0.0.2
-          docker push mallond/jenkins-main:v0.0.1
+          docker push mallond/jenkins-main:v0.0.2
 
 
 
