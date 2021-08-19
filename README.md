@@ -18,3 +18,9 @@ kubectl get pods -n jenkins
 kubectl logs <pod_name> -n jenkins
 out: Copy passowrd to be used to do the initial install
 ```
+
+```
+kubectl proxy --port=8081 &
+curl localhost:8081/api
+out: This will give you the serverAddress
+```
