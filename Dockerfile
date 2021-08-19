@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.235.2
+FROM jenkins/jenkins:lts
 
 # Unlock root previleges 
 USER root
