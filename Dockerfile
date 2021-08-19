@@ -1,6 +1,5 @@
 FROM jenkins/jenkins:lts
 
-
 # Unlock root previleges 
 USER root
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
